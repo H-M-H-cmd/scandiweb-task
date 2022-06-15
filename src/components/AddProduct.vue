@@ -16,11 +16,8 @@
             <form v-on:submit.prevent="addProduct" >
                 <div>
                     <input type="text" id="sku" placeholder="SKU" v-model="sku" >
-                    <label v-if="errors.skuErr" for="sku">{{errors.skuErr}}</label>
                     <input type="text" id="name" placeholder="name" v-model="name" >
-                    <label v-if="errors.nameErr" for="name" >{{errors.nameErr}}</label>
                     <input type="text" id="price" placeholder="price" v-model="price" >
-                    <label v-if="errors.price" for="price">{{errors.price}}</label>
                 </div>
 
 
