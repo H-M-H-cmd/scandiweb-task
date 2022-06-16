@@ -5,7 +5,7 @@
                 <h2>Product List</h2>
             </div>
            <div class="btns-header">
-                <button class="btn"><router-link to="addproduct">Add</router-link></button>
+                <button class="btn"><router-link to="addproduct">ADD</router-link></button>
            <button class="btn" id="delete-product-btn" value="MASS DELETE" @click="massDelete()">MASS DELETE</button>
            </div>
         </header>
