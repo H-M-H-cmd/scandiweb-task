@@ -4,7 +4,9 @@
             <div>
                 <h2>Product Add</h2>
             </div>
-             <div class="btns-header">
+             <div class="btns-header">                
+                <button class="btn" v-on:click.prevent="addProduct" type="Submit">Save</button>
+
                 <button class="btn" @click="back()">Cancel</button>
             </div>
         </header>
@@ -13,7 +15,7 @@
             <span v-for="error in errors" :key="error.id">{{error}}<br></span>
         </div>
         <div class="form" >
-            <form id="product_form" v-on:submit.prevent="addProduct" >
+            <form id="product_form" >
                 <div>
                     <input type="text" id="sku" placeholder="SKU" v-model="sku" >
                     <input type="text" id="name" placeholder="name" v-model="name" >
@@ -34,7 +36,6 @@
                 </div>
                 <p>{{type.description}}</p>
 
-                <button class="btn"   :style="{width: '100px'}" type="Submit">Save</button>
             </form>
         </div>
     </div>
