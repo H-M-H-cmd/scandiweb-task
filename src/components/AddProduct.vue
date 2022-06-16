@@ -26,7 +26,7 @@
                 <div>
                     <select v-model="type" name="type" id="productType" @change="getAttributes($event)" >
                             <option selected disabled>type</option>
-                            <option :key="item.id" v-for="item in types" :value="item.id" :id="item.id" >{{item.name}}</option>
+                            <option :key="item.id" v-for="item in types" :value="item.id" :id="item.name" >{{item.name}}</option>
                     </select>
                 </div>
 
