@@ -16,19 +16,19 @@
         </div>
         <div class="form" >
             <form id="product_form" >
-                <div>
+                <!-- <div> -->
                     <input type="text" id="sku" placeholder="SKU" v-model="sku" >
                     <input type="text" id="name" placeholder="name" v-model="name" >
                     <input type="text" id="price" placeholder="price" v-model="price" >
-                </div>
+                <!-- </div> -->
 
 
-                <div>
+                <!-- <div> -->
                     <select v-model="type" name="type" id="productType" @change="getAttributes($event)" >
                             <option selected disabled>type</option>
                             <option :key="item.id" v-for="item in types" :value="item.id" :id="item.name" >{{item.name}}</option>
                     </select>
-                </div>
+                <!-- </div> -->
 
                 <div  v-for="attribute in attributes" :key="attribute.id" :id="attribute.name">
                     <span>{{attribute.name}} ({{attribute.unit}}) </span> 
