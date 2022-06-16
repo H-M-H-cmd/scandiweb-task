@@ -2,7 +2,7 @@
     <div>
         <header>
             <div>
-                <h2>Add Product</h2>
+                <h2>Product Add</h2>
             </div>
              <div class="btns-header">
                 <button class="btn" @click="back()">Cancel</button>
@@ -13,7 +13,7 @@
             <span v-for="error in errors" :key="error.id">{{error}}<br></span>
         </div>
         <div class="form" >
-            <form v-on:submit.prevent="addProduct" >
+            <form id="product_form" v-on:submit.prevent="addProduct" >
                 <div>
                     <input type="text" id="sku" placeholder="SKU" v-model="sku" >
                     <input type="text" id="name" placeholder="name" v-model="name" >

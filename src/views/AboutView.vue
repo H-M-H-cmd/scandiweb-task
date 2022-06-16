@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="Product-Add">
     <AddProduct />
   </div>
 </template>
@@ -7,7 +7,7 @@
 import AddProduct from '@/components/AddProduct.vue';
 
 export default {
-  name:"About",
+  name:"Product-Add",
   components: {
     AddProduct
 }
