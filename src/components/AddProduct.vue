@@ -26,11 +26,11 @@
                 <!-- <div> -->
                     <select v-model="type" name="type" id="#productType" @change="getAttributes($event)" >
                             <option selected disabled>type</option>
-                            <option :key="item.id" v-for="item in types" :value="item.id" :id="#item.name" >{{item.name}}</option>
+                            <option :key="item.id" v-for="item in types" :value="item.id" :id="'#' + item.name" >{{item.name}}</option>
                     </select>
                 <!-- </div> -->
 
-                <div  v-for="attribute in attributes" :key="attribute.id" :id="#attribute.name">
+                <div  v-for="attribute in attributes" :key="attribute.id" :id="'#' + attribute.name">
                     <span>{{attribute.name}} ({{attribute.unit}}) </span> 
                     <input :id="attribute.name"  class="input-field" name="field1" type="text"   v-model="attribute.value">
                 </div>
