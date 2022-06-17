@@ -30,7 +30,7 @@
                     </select>
                 <!-- </div> -->
 
-                <div  v-for="attribute in attributes" :key="attribute.id" :id="attribute.name">
+                <div  v-for="attribute in attributes" :key="attribute.id" :id="#attribute.name">
                     <span>{{attribute.name}} ({{attribute.unit}}) </span> 
                     <input :id="attribute.name"  class="input-field" name="field1" type="text"   v-model="attribute.value">
                 </div>
