@@ -5,7 +5,7 @@
                 <h2>Product Add</h2>
             </div>
              <div class="btns-header">                
-                <button class="btn" @click.prevent="addProduct()" type="Submit">Save</button>
+                <button class="btn" @click="addProduct()" type="Submit">Save</button>
 
                 <button class="btn" @click="back()">Cancel</button>
             </div>
