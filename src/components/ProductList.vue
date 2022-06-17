@@ -104,18 +104,18 @@ header{
     background-color: #2196f3;
     padding: 5px;
     border-radius: 4px;
-    transition-duration: .3s;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    cursor: pointer;
+    /* transition-duration: .3s; */
+    /* transition-property: all; */
+    /* transition-timing-function: ease-in-out; */
+    /* cursor: pointer; */
 }
 .btn a {
     text-decoration: none;
     color: #fff;
 }
-.btn:hover {
+/* .btn:hover {
     transform: scale(.95);
-}
+} */
 header h2 {
     margin-left: 20px; 
 }
