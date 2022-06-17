@@ -5,7 +5,7 @@
                 <h2>Product Add</h2>
             </div>
              <div class="btns-header">                
-                <button class="btn" v-on:click.prevent="addProduct" type="Submit">Save</button>
+                <button class="btn" @click.prevent="addProduct()" type="Submit">Save</button>
 
                 <button class="btn" @click="back()">Cancel</button>
             </div>
@@ -15,7 +15,7 @@
             <span v-for="error in errors" :key="error.id">{{error}}<br></span>
         </div>
         <!-- <div class="form" > -->
-            <form id="product_form" >
+            <form action="" id="product_form" @submit.prevent="addProduct()">
                 <!-- <div> -->
                     <input type="text" id="sku"  placeholder="SKU" v-model="sku" >
                     <input type="text" id="name" placeholder="name" v-model="name" >
@@ -25,7 +25,7 @@
 
                 <!-- <div> -->
                     <select v-model="type" name="type" id="productType" @change="getAttributes($event)" >
-                            <option value="">type</option>
+                            <option selected disabled>type</option>
                             <option :key="item.id" v-for="item in types" :value="item.id" :id="item.name" >{{item.name}}</option>
                     </select>
                 <!-- </div> -->
