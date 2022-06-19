@@ -4,6 +4,8 @@
 ```
 npm install
 ```
+## you can see the site from here
+https://vue-php-store.netlify.app
 
 ### Compiles and hot-reloads for development
 ```
@@ -22,3 +24,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
