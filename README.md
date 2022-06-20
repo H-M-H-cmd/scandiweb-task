@@ -22,6 +22,12 @@ npm run build
 npm run lint
 ```
 
+### photos
+<img src="/images/scandi-1.png">
+<img src="/images/scandi-2.png">
+<img src="/images/scandi-3.png">
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
