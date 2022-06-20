@@ -23,7 +23,7 @@ npm run lint
 ```
 
 ### photos
-<img src="/images/scandi-1.png">
+<img src="/images/scandi-1.png" height="300px">
 <img src="/images/scandi-2.png">
 <img src="/images/scandi-3.png">
 
