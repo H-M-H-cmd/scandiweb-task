@@ -18,7 +18,7 @@ class Product
         $this->attributes =  $data['attributes'];
     }
 
-    public static function all()
+    public static function getAll()
     {
         return DB::query("SELECT * FROM product");
     }

@@ -50,9 +50,8 @@ export default {
         var data = new FormData();
         data.append("toDeleteArray", this.toDelete);
         axios
-          .post(
-            "https://store-php-api22.000webhostapp.com/api.php?action=delete",data
-          ).then(res => {
+          .post("http://localhost/api/public/home/delete",data)
+            .then(res => {
               if (res.data.error) {
                 console.log("Error", res);
 
@@ -66,7 +65,7 @@ export default {
         },
      getAllData(){
            axios
-            .get('https://store-php-api22.000webhostapp.com/api.php?action=getAll')
+            .get('http://localhost/api/public/home/getData')
               .then(res => (this.products = res.data))
               .catch(err => {
                 console.log("Error", err);

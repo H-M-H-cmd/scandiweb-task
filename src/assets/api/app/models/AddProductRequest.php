@@ -1,7 +1,4 @@
 <?php
-require_once "Validation.php";
-// require_once './DB.php';
-
 
 class AddProductRequest implements Validation
 {

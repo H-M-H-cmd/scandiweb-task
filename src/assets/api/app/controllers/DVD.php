@@ -1,9 +1,5 @@
 <?php
-
-
-
-
-class Book extends ProductController
+class DVD extends ProductController
 {
     public static $errors = [];
 
@@ -24,7 +20,7 @@ class Book extends ProductController
             'type' => [
                 'required' => [],
             ],
-            'weight' => [
+            'size' => [
                 'required' => [],
                 'digits' => [],
             ],
@@ -35,14 +31,8 @@ class Book extends ProductController
             $product->add();
             return true;
         } else {
-            $errors = AddProductRequest::getErrors();
-            // $e = json_encode($errors,JSON_FORCE_OBJECT);
-            return $errors;
+            return AddProductRequest::getErrors();
         }
     }
 }
-
-
-
-
 ?>

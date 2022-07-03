@@ -78,7 +78,7 @@ export default {
                         }
 
                     axios
-                    .post('https://store-php-api22.000webhostapp.com/api.php?action=addProduct',data)
+                    .post('http://localhost/api/public/home/addProduct/',data)
                     .then(res => { 
                         if(res.data.errors){
                             this.errors = res.data.errors;
@@ -95,7 +95,7 @@ export default {
                 this.type_value = event.target.options[event.target.options.selectedIndex].text;
                 let type_id = event.target.value;
                 axios
-                .get('https://store-php-api22.000webhostapp.com/api.php?action=getAttributes&type_id='+type_id)
+                .get('http://localhost/api/public/home/getAttributes/?type_id='+type_id)
                 .then(res =>{
                     (this.attributes = res.data)
                     })
@@ -108,7 +108,7 @@ export default {
     {
         // this.getTypes();          
                 axios
-                .get('https://store-php-api22.000webhostapp.com/api.php?action=getTypes')
+                .get('http://localhost/api/public/home/getTypes')
                 .then(res => {
                     this.types = res.data;
                 })

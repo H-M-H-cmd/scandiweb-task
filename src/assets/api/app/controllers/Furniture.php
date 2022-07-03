@@ -40,8 +40,7 @@ class Furniture extends ProductController {
             return  'succes';
             
         } else {
-            $errors = AddProductRequest::getErrors();
-            return $errors;
+            return AddProductRequest::getErrors();
         }
     }
     
