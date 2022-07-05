@@ -4,8 +4,15 @@ class DB
 {
     public static function connect(): PDO
     {
-        $connection = new PDO("mysql:host=localhost;dbname=store", "root");
-        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $servername = "sql11.freesqldatabase.com";
+        $username = "sql11504130";
+        $password = "L3JNhbx98z";
+        $databasename = 'sql11504130';
+        $port = "3306";
+        $charset = 'utf8mb4';  
+
+        
+        $connection = new PDO("mysql:host=$servername;dbname=$databasename;charset=$charset;port=$port", $username, $password);        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $connection;
     }
 

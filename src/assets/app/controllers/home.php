@@ -2,6 +2,7 @@
 class Home extends Controller
 {
     public $content = "Content-type: application/json";
+    
 
     public function getData(){
             $res = Product::getAll();

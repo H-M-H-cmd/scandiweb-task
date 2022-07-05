@@ -50,7 +50,7 @@ export default {
         var data = new FormData();
         data.append("toDeleteArray", this.toDelete);
         axios
-          .post("http://localhost/api/public/home/delete",data)
+          .post("http://scandiwebtestapp.herokuapp.com/public/home/delete",data)
             .then(res => {
               if (res.data.error) {
                 console.log("Error", res);
@@ -65,7 +65,7 @@ export default {
         },
      getAllData(){
            axios
-            .get('http://localhost/api/public/home/getData')
+            .get('http://scandiwebtestapp.herokuapp.com/public/home/getData')
               .then(res => (this.products = res.data))
               .catch(err => {
                 console.log("Error", err);
