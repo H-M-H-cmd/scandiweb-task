@@ -80,10 +80,11 @@ export default {
                     axios
                     .post('https://scandiwebtestapp.herokuapp.com/public/home/addProduct/',data)
                     .then(res => { 
-                        if(res.data.errors){
+                        console.log(res.data)
+                        if(res.data){
                             this.errors = res.data.errors;
                         }else{
-                            this.back();
+                           this.back();
                         }
                     })
                     .catch(err => (this.err = err.data))
