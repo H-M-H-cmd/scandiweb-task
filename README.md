@@ -5,7 +5,8 @@
 npm install
 ```
 ## you can see the site from here
-https://vue-php-store.netlify.app
+https://scandi-task-final.netlify.app/
+
 
 ### Compiles and hot-reloads for development
 ```
