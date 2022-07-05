@@ -78,7 +78,7 @@ export default {
                         }
 
                     axios
-                    .post('http://scandiwebtestapp.herokuapp.com/public/home/addProduct/',data)
+                    .post('https://scandiwebtestapp.herokuapp.com/public/home/addProduct/',data)
                     .then(res => { 
                         if(res.data.errors){
                             this.errors = res.data.errors;
@@ -95,7 +95,7 @@ export default {
                 this.type_value = event.target.options[event.target.options.selectedIndex].text;
                 let type_id = event.target.value;
                 axios
-                .get('http://scandiwebtestapp.herokuapp.com/public/home/getAttributes/?type_id='+type_id)
+                .get('https://scandiwebtestapp.herokuapp.com/public/home/getAttributes/?type_id='+type_id)
                 .then(res =>{
                     (this.attributes = res.data)
                     })
@@ -107,7 +107,7 @@ export default {
     },mounted()
     {        
                 axios
-                .get('http://scandiwebtestapp.herokuapp.com/public/home/getTypes')
+                .get('https://scandiwebtestapp.herokuapp.com/public/home/getTypes')
                 .then(res => {
                     this.types = res.data;
                 })
